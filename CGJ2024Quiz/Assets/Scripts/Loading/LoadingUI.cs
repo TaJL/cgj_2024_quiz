@@ -22,23 +22,7 @@ public class LoadingUI : MonoBehaviour
 
         Show();
     }
-
-    float a = 0;
-    bool show = true;
-    private void Update() {
-        a += Time.deltaTime;
-        if (a < 2)
-        {
-            return;
-        }
-        a = 0;
-        if (show)
-            Show();
-        else
-            Hide();
-        show = !show;
-    }
-
+    
     public void Show()
     {
         SetActiveVisuals(true);
